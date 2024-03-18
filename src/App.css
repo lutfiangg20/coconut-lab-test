@@ -1,0 +1,96 @@
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.subText {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.toggleButton {
+  color: #ffffff;
+  background-color: #ff0000;
+  border-radius: 29px;
+  border-color: transparent;
+  margin-top: 3rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 43px;
+  padding-right: 43px;
+  cursor: pointer;
+}
+
+:hover.toggleButton {
+  background-color: #fd0000;
+  color: #ffffff;
+}
+
+.toggleButton:active {
+  background-color: #ac0000;
+}
+
+hr {
+  border: 1px solid;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  padding: 1rem;
+  align-items: end;
+}
+
+.grid-item1 {
+  justify-self: center;
+}
+.grid-item2 {
+  justify-self: center;
+}
+.grid-item3 {
+  justify-self: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .main .grid-item1 {
+    order: 1;
+    justify-self: center;
+    text-align: center;
+    grid-column: span 6;
+  }
+  .main .grid-item2 {
+    order: 0;
+    grid-column: span 12;
+  }
+  .main .grid-item3 {
+    order: 2;
+    justify-self: center;
+    text-align: center;
+    grid-column: span 6;
+  }
+
+  .grid-item-main {
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
